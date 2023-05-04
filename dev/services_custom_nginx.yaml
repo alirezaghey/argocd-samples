@@ -4,7 +4,7 @@ metadata:
   name: custom-nginx-service
 spec:
   selector:
-    app: custom_nginx
+    app: custom-nginx
   ports:
     - port: 6666
       protocol: TCP
