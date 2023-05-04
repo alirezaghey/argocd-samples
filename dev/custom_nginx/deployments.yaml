@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custom_nginx
+spec:
+  selector:
+    matchLabels:
+      app: custom_nginx
+  replicas: 10
+  template:
+    metadata:
+      labels:
+        app: custom_nginx
+    spec:
+      containers:
+        - name: custom_nginx
+          image: alirezaghey/custom_nginx
+          ports:
+            - containerPort: 80
