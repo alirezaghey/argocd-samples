@@ -21,6 +21,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:dev/custom_nginx"
+          context: "{{defaultContext}}:envs/dev/custom_nginx"
           push: true
           tags: alirezaghey/custom_nginx
