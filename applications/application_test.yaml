@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/alirezaghey/argocd-samples.git
     targetRevision: HEAD
-    path: test
+    path: envs/test
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-test
