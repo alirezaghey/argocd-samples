@@ -22,5 +22,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:envs/dev/custom_nginx"
+          platforms: linux/amd64,linux/arm/v7
           push: true
           tags: alirezaghey/custom_nginx
